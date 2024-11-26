@@ -5,9 +5,9 @@ samples = 1000;
 t = logspace(-5, 0, samples);
 noises = zeros([3 samples scenarios]);
 
-devS = 10^-5;
-devW = 10^-7;
-devF = 10^-6;
+devS = 10^-12;
+devW = 10^-8;
+devF = 10^-11;
 
 mindt = t(2) - t(1);
 
@@ -33,8 +33,8 @@ total = sum(noises, 1);
 figure();
 hold on;
 for k = 1:1:scenarios
-    semilogx(t, total(1,:,k));
+    semilogx(t, total(:,:,k).');
 end
 
 figure();
-plot(t,std(total,0,3));
+semilogx(t,std(total,0,3));
