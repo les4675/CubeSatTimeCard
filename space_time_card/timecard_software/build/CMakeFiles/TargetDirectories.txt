@@ -1,0 +1,3 @@
+C:/22257/space_time_card/timecard_software/build/CMakeFiles/timecard_software.elf.dir
+C:/22257/space_time_card/timecard_software/build/CMakeFiles/edit_cache.dir
+C:/22257/space_time_card/timecard_software/build/CMakeFiles/rebuild_cache.dir

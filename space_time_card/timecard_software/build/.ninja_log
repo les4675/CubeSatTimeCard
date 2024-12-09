@@ -1,0 +1,11 @@
+# ninja log v5
+2	125	7543555673307923	CMakeFiles/timecard_software.elf.dir/main.c.obj	ed8c2ce24dd579b9
+125	372	7543555674940127	timecard_software.elf	7d1b66aadf970ef5
+2	119	7543525311633403	CMakeFiles/timecard_software.elf.dir/helloworld.c.obj	1887a6ef6e6aa766
+7	177	7543483583532603	CMakeFiles/timecard_software.elf.dir/xaxidma_example_sg_poll.c.obj	217953842df569c8
+5	107	7543555673148349	CMakeFiles/timecard_software.elf.dir/platform.c.obj	9ea51b55a64dc6f
+2	131	7543556569073840	build.ninja	e973716cc64fb989
+1	21	0	clean	1b6cfa844fce8249
+5	114	7543556571578928	CMakeFiles/timecard_software.elf.dir/platform.c.obj	9ea51b55a64dc6f
+2	131	7543556571748474	CMakeFiles/timecard_software.elf.dir/main.c.obj	ed8c2ce24dd579b9
+131	371	7543556573251956	timecard_software.elf	7d1b66aadf970ef5

@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/22257/space_time_card/timecard_software/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.1\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\timecard_software.elf.dir\\main.c.obj -c C:\\22257\\space_time_card\\timecard_software\\src\\main.c",
+  "file": "C:\\22257\\space_time_card\\timecard_software\\src\\main.c"
+},
+{
+  "directory": "C:/22257/space_time_card/timecard_software/build",
+  "command": "C:\\Xilinx\\Vitis\\2024.1\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -isystem C:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/12.2.0/include-fixed -isystem C:/Xilinx/Vitis/2024.1/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -O2 -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/22257/space_time_card/timecard_hardware/export/timecard_hardware/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\timecard_software.elf.dir\\platform.c.obj -c C:\\22257\\space_time_card\\timecard_software\\src\\platform.c",
+  "file": "C:\\22257\\space_time_card\\timecard_software\\src\\platform.c"
+}
+]
