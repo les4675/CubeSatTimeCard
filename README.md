@@ -1,1 +1,1 @@
-Test
+Currently we have developed models from the top level overview of our time card, along with setting up the SOM. Our goal in the next few months is program the SOM to take in data from a GNSS through the CAN protcol and to fine tone the PLL with the atomic clock that we have aquired. 
