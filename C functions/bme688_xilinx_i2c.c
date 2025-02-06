@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "xiicps.h"  // Xilinx PS I2C library
 #include "xparameters.h"  // Hardware parameters
+#include "BME688.h"
 
 #define BME688_I2C_ADDR  0x76  // Default I2C address
 
