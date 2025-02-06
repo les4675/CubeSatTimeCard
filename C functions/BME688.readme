@@ -1,0 +1,67 @@
+# Implementing BME688 with AXI IIC on Xilinx Zynq-7000 SoC
+
+## Overview
+This guide explains how to set up and use the BME688 sensor with the AXI IIC block on a Xilinx Zynq-7000 SoC. The provided C library interfaces with the AXI IIC driver to communicate with the sensor and retrieve temperature, humidity, pressure, and gas resistance data.
+
+## Prerequisites
+- Xilinx Vivado (for FPGA design)
+- Xilinx Vitis (for software development)
+- A Xilinx Zynq-7000 SoC-based board (e.g., ZedBoard, ZC702, etc.)
+- Bosch BME688 sensor module
+
+## Hardware Setup in Vivado
+1. **Open Vivado and Create a Block Design**
+2. **Add and Configure AXI IIC Block:**
+   - Go to the **IP Catalog** and add the **AXI IIC** block.
+   - Configure the IIC clock frequency (100kHz or 400kHz recommended).
+   - Connect the **AXI IIC** to the **Zynq Processing System (PS)** via an **AXI Interconnect**.
+   - Expose the **SDA** and **SCL** pins to **external ports** for connection to the BME688 sensor.
+3. **Generate the Bitstream and Export Hardware**
+   - Validate the design and generate the bitstream.
+   - Export the hardware along with the bitstream to be used in Vitis.
+
+## Software Setup in Vitis
+1. **Create a New Vitis Application Project**
+   - Use the exported **.xsa** file from Vivado.
+   - Select the **Standalone (bare-metal)** domain for embedded software development.
+2. **Add the BME688 I2C Driver Files**
+   - Copy `bme688_xilinx_i2c.c` and `bme688_xilinx_i2c.h` into the project `src` directory.
+3. **Modify the Application Code**
+   - Include the header file:
+     ```c
+     #include "bme688_xilinx_i2c.h"
+     ```
+   - Initialize the IIC interface:
+     ```c
+     if (BME688_Init() != XST_SUCCESS) {
+         xil_printf("BME688 initialization failed!\n");
+         return -1;
+     }
+     ```
+   - Read sensor data:
+     ```c
+     float temperature = BME688_GetTemperature();
+     float humidity = BME688_GetHumidity();
+     float pressure = BME688_GetPressure();
+     float gas_resistance = BME688_GetGasResistance();
+     xil_printf("Temperature: %.2f C\n", temperature);
+     xil_printf("Humidity: %.2f %%\n", humidity);
+     xil_printf("Pressure: %.2f hPa\n", pressure);
+     xil_printf("Gas Resistance: %.2f Ohm\n", gas_resistance);
+     ```
+4. **Build and Run the Application**
+   - Compile the project and load it onto the Zynq SoC.
+   - Monitor the output via UART or debug console.
+
+## Additional Notes
+- Ensure pull-up resistors (4.7kΩ) are connected to SDA and SCL lines.
+- Adjust the I²C clock frequency in **Vivado and Vitis** for optimized performance.
+- Modify the `I2C Device ID` in `BME688_Init()` if using a different I2C instance.
+
+## Troubleshooting
+- **No response from the sensor:** Check the I2C connections and verify power.
+- **Read errors:** Ensure correct I2C address (default `0x76` or `0x77`).
+- **AXI IIC not working:** Verify the AXI Interconnect settings in Vivado.
+
+By following this guide, you should be able to successfully integrate the BME688 sensor with the AXI IIC block on your Xilinx Zynq-7000 SoC. 🚀
+
