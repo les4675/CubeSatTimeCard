@@ -61,11 +61,7 @@ loglog(f,randomWalkFM);
 nexttile;
 loglog(f, whitePM + flickerPM + whiteFM + flickerFM + randomWalkFM);
 
-spectrTerms = [((f+1) .^-2);
-                (((f+1)).^1);
-                (f+10).^-1
-                (f+100).^-8;
-                (f+1).^7];
+spectrTerms = [(((f-100)).^-4)];
 
 figure();
 loglog(f, spectrTerms);
@@ -83,16 +79,16 @@ end
 num = sin(pift).^4;
 den = pift.^2;
 
-AVAR = 2 * sum(totalNoiseInterpCombined .* num ./ den .* df,2);
+AVAR = 2 * sum(spectr .* num ./ den .* df,2);
 
 ADEV = sqrt(AVAR);
 
 figure();
 tiledlayout(2,1);
 nexttile;
-loglog(f, totalNoise);
+loglog(f, spectr);
 hold on;
-loglog(f, totalNoiseInterpCombined, "Color",[0 0 0]);
+% loglog(f, totalNoiseInterpCombined, "Color",[0 0 0]);
 xlabel("Frequency (Hz)");
 title("Noise Power Spectrum");
 % ylim([-2 2]);
