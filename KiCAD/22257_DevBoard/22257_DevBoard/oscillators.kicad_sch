@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "8b15c41f-59de-4529-913b-92890eb5db9b")
+	(uuid "32dfebef-0609-4385-b7c7-0c6b86226d82")
 	(paper "A4")
 	(lib_symbols
 		(symbol "22257_DevBoard_Library:SA-45s"
@@ -42824,6 +42824,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 71.12) (xy 102.87 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af89d020-6a5a-469f-9780-c025f27e2a09")
+	)
+	(wire
+		(pts
 			(xy 248.92 63.5) (xy 255.27 63.5)
 		)
 		(stroke
@@ -42997,6 +43007,28 @@
 		(uuid "3ab5b0f6-b007-4b29-b092-1e42dd3522b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 120.0066 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CSAC_RF_OUT"
+		(shape output)
+		(at 102.87 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "48424744-9437-4c80-b3d4-89e27d4e8676")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.6157 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)

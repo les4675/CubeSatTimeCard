@@ -1987,6 +1987,48 @@
 		)
 	)
 	(sheet
+		(at 219.71 19.05)
+		(size 95.25 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6aaddadb-6430-448a-80b0-a7920d7dbc60")
+		(property "Sheetname" "Power And Connectors"
+			(at 219.71 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power-connectors.kicad_sch"
+			(at 219.71 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "22257_DevBoard"
+				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 24.13 19.05)
 		(size 77.47 52.07)
 		(exclude_from_sim no)
