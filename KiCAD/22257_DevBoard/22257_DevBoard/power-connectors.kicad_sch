@@ -5392,7 +5392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 120.3452 132.08 0)
 			(effects
 				(font
@@ -5460,7 +5460,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 190.5 110.7948 0)
 			(effects
 				(font
@@ -5795,7 +5795,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 195.58 35.8648 0)
 			(effects
 				(font
@@ -5862,7 +5862,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.554 51.054 90)
 			(effects
 				(font
@@ -6736,7 +6736,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.774 59.436 90)
 			(effects
 				(font
@@ -6938,7 +6938,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 255.27 59.69 0)
 			(effects
 				(font
@@ -7015,7 +7015,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_2-G-7,62_1x02_P7.62mm_Horizontal"
 			(at 52.07 185.42 0)
 			(effects
 				(font
@@ -7151,7 +7151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 131.7752 129.54 0)
 			(effects
 				(font
@@ -7289,7 +7289,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 51.1048 50.8 0)
 			(effects
 				(font
@@ -7774,7 +7774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
 			(at 156.21 212.09 0)
 			(effects
 				(font
@@ -8042,7 +8042,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 237.49 59.69 0)
 			(effects
 				(font
@@ -8321,7 +8321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.6552 130.81 0)
 			(effects
 				(font
@@ -8388,7 +8388,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 66.294 49.784 90)
 			(effects
 				(font
@@ -8592,7 +8592,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 271.78 59.69 0)
 			(effects
 				(font
@@ -8734,7 +8734,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 254.254 48.006 90)
 			(effects
 				(font
@@ -8870,7 +8870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
 			(at 58.42 237.49 0)
 			(effects
 				(font
@@ -8940,7 +8940,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 127.3048 46.99 0)
 			(effects
 				(font
@@ -9076,7 +9076,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 38.4048 50.8 0)
 			(effects
 				(font
@@ -9146,7 +9146,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 72.0852 130.81 0)
 			(effects
 				(font
@@ -9346,7 +9346,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 105.41 47.2948 0)
 			(effects
 				(font
@@ -9504,7 +9504,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
 			(at 58.42 212.09 0)
 			(effects
 				(font
@@ -9864,7 +9864,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.1352 130.81 0)
 			(effects
 				(font
@@ -9934,7 +9934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
 			(at 156.21 237.49 0)
 			(effects
 				(font
@@ -10001,7 +10001,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 84.074 120.904 90)
 			(effects
 				(font
@@ -10137,7 +10137,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 140.0048 46.99 0)
 			(effects
 				(font
