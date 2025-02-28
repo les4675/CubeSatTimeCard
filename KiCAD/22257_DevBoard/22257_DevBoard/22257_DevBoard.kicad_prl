@@ -29,8 +29,10 @@
       "zones": true
     },
     "visible_items": [
-      "ratsnest",
+      "vias",
       "grid",
+      "footprints_front",
+      "pads",
       "zones",
       "shapes"
     ],

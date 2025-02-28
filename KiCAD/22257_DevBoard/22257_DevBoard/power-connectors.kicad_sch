@@ -5035,7 +5035,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 143.51 219.71 0)
 			(effects
 				(font
@@ -5103,7 +5103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "2222_DevBoar_Footprints:BVT-I-R0002-1"
 			(at 144.78 117.602 90)
 			(effects
 				(font
@@ -5177,7 +5177,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 144.78 109.22 0)
 			(effects
 				(font
@@ -5247,7 +5247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 271.78 246.38 0)
 			(effects
 				(font
@@ -5530,7 +5530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 238.76 246.38 0)
 			(effects
 				(font
@@ -5595,7 +5595,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 143.51 245.11 0)
 			(effects
 				(font
@@ -6064,7 +6064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 250.19 246.38 0)
 			(effects
 				(font
@@ -6263,7 +6263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
 			(at 176.53 30.48 0)
 			(effects
 				(font
@@ -6328,7 +6328,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 68.58 246.38 0)
 			(effects
 				(font
@@ -6398,7 +6398,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
 			(at 46.99 41.91 0)
 			(effects
 				(font
@@ -6663,7 +6663,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "2222_DevBoar_Footprints:BVT-I-R0002-1"
 			(at 157.48 42.672 90)
 			(effects
 				(font
@@ -7359,7 +7359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
 			(at 165.1 110.49 0)
 			(effects
 				(font
@@ -7490,7 +7490,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 68.58 220.98 0)
 			(effects
 				(font
@@ -7707,7 +7707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 261.62 246.38 0)
 			(effects
 				(font
@@ -8118,7 +8118,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 270.764 48.006 90)
 			(effects
 				(font
@@ -8251,7 +8251,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 236.474 48.006 90)
 			(effects
 				(font
@@ -8456,7 +8456,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 157.48 34.29 0)
 			(effects
 				(font
@@ -9794,7 +9794,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch5.08mm_Drill1.3mm"
 			(at 73.66 184.15 0)
 			(effects
 				(font

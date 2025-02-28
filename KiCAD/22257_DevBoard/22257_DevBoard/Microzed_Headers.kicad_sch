@@ -12714,7 +12714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 163.83 247.65 0)
 			(effects
 				(font
@@ -13405,7 +13405,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 184.15 247.65 0)
 			(effects
 				(font
@@ -13544,7 +13544,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:61083-102402LF"
+		(property "Footprint" "22257_DevBoard:61083-102402LF_1104291"
 			(at 279.4 137.16 0)
 			(effects
 				(font
@@ -14052,7 +14052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
 			(at 173.99 247.65 0)
 			(effects
 				(font
@@ -14191,7 +14191,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:61083-102402LF"
+		(property "Footprint" "22257_DevBoard:61083-102402LF_1104291"
 			(at 148.59 137.16 0)
 			(effects
 				(font
@@ -14560,7 +14560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:CON40_2X20_TU_HTS_SAI"
+		(property "Footprint" "22257_DevBoard:CON40_2X20_TU_HTS_SAI"
 			(at 379.73 83.82 0)
 			(effects
 				(font
@@ -15019,7 +15019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "ZED_BREAKOUT_v22:CON40_2X20_TU_HTS_SAI"
+		(property "Footprint" "22257_DevBoard:CON40_2X20_TU_HTS_SAI"
 			(at 48.26 186.69 0)
 			(effects
 				(font

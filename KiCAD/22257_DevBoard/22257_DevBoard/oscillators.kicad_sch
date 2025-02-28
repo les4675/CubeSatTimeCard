@@ -45496,7 +45496,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 266.7 185.42 0)
 			(effects
 				(font
@@ -45640,7 +45640,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "2222_DevBoar_Footprints:SA-45"
 			(at 100.33 68.58 0)
 			(effects
 				(font
@@ -45862,7 +45862,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 303.784 197.866 90)
 			(effects
 				(font
@@ -45996,7 +45996,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 220.98 157.48 0)
 			(effects
 				(font
@@ -46206,7 +46206,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 245.11 171.45 0)
 			(effects
 				(font
@@ -46349,7 +46349,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 313.944 197.866 90)
 			(effects
 				(font
@@ -46417,7 +46417,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "2222_DevBoar_Footprints:SiT5356"
 			(at 293.37 69.85 0)
 			(effects
 				(font
@@ -46644,7 +46644,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 284.734 197.866 90)
 			(effects
 				(font
@@ -46860,7 +46860,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 293.624 197.866 90)
 			(effects
 				(font
@@ -47626,7 +47626,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
 			(at 199.39 142.24 0)
 			(effects
 				(font
