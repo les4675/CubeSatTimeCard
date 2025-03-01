@@ -9416,6 +9416,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 142.24) (xy 312.42 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43941d3-034d-47bb-bb80-23964bb1a1b6")
+	)
+	(wire
+		(pts
 			(xy 48.26 151.13) (xy 53.34 151.13)
 		)
 		(stroke
@@ -11734,6 +11744,28 @@
 		)
 		(uuid "fefc2e1c-2cd2-40b6-94ae-e2b92ca00d9f")
 	)
+	(global_label "BRD_10MHz_OUT"
+		(shape output)
+		(at 312.42 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0f5153d1-7c9a-4802-b798-7ca1459e7f79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 331.008 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "BRD_PPS_IN"
 		(shape input)
 		(at 312.42 88.9 0)
@@ -12152,6 +12184,28 @@
 			)
 		)
 	)
+	(global_label "BRD_PPS_IN"
+		(shape input)
+		(at 184.15 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d5136d31-3fa7-4749-bb75-678ea686cd63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.5652 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PM_SCL_5V"
 		(shape input)
 		(at 241.3 104.14 180)
@@ -12328,7 +12382,7 @@
 			)
 		)
 	)
-	(global_label "CSAC_BITE"
+	(global_label "CSAC_PPS_OUT"
 		(shape input)
 		(at 184.15 134.62 0)
 		(fields_autoplaced yes)
@@ -12340,7 +12394,7 @@
 		)
 		(uuid "fd1cd51b-bba3-43bf-9b6e-adec47a4d4b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.9323 134.62 0)
+			(at 201.2866 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
