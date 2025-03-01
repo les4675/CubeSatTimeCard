@@ -4123,144 +4123,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ZED_BREAKOUT_v22-eagle-import:MOUNT-PAD-ROUND5.0"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "H"
-				(at 2.794 0.5842 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at 2.794 -2.4638 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "ZED_BREAKOUT_v22:5,0-PAD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "MOUNTING PAD, round"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MOUNT-PAD-ROUND5.0_1_0"
-				(arc
-					(start -4.193 -1.5396)
-					(mid -3.3331 -0.526)
-					(end -2.032 -0.254)
-					(stroke
-						(width 1.016)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.032 0.254)
-					(mid -3.333 0.5261)
-					(end -4.193 1.5396)
-					(stroke
-						(width 1.016)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.524)
-					(stroke
-						(width 0.0508)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 2.032)
-					(mid 0.5261 3.333)
-					(end 1.5396 4.193)
-					(stroke
-						(width 1.016)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.5396 -4.193)
-					(mid 0.526 -3.3331)
-					(end 0.254 -2.032)
-					(stroke
-						(width 1.016)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "MOUNT"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "B5"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "ZED_BREAKOUT_v22-eagle-import:TD-120-G-AACON40_2X20_TU_HTS_SAI"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7934,16 +7796,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 250.19) (xy 163.83 252.73)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "4de8922f-f024-4853-a455-a57f103b2967")
-	)
-	(wire
-		(pts
 			(xy 248.92 172.72) (xy 256.54 172.72)
 		)
 		(stroke
@@ -9204,16 +9056,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 250.19) (xy 173.99 252.73)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "a6466e63-152f-4028-9083-1f8715fda3ed")
-	)
-	(wire
-		(pts
 			(xy 302.26 152.4) (xy 312.42 152.4)
 		)
 		(stroke
@@ -9401,16 +9243,6 @@
 			(type default)
 		)
 		(uuid "b462ef71-3fce-478f-879f-c6f44e9f6fe0")
-	)
-	(wire
-		(pts
-			(xy 184.15 250.19) (xy 184.15 252.73)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "b4e52454-a936-4f12-bbca-06c3dd781201")
 	)
 	(wire
 		(pts
@@ -11502,16 +11334,6 @@
 		)
 		(uuid "b74ac146-4270-4885-be08-e96987fc4878")
 	)
-	(label "GND"
-		(at 184.15 252.73 0)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9e0ba42-1e15-4041-9291-18e8dba36825")
-	)
 	(label "35_E19"
 		(at 53.34 128.27 0)
 		(effects
@@ -11541,16 +11363,6 @@
 			(justify left bottom)
 		)
 		(uuid "bfb7ce37-c413-4079-8a77-c7f5a381855b")
-	)
-	(label "3V3"
-		(at 173.99 252.73 0)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1f7e2d2-2286-4a5c-835b-c4cc55935440")
 	)
 	(label "35_D20"
 		(at 53.34 120.65 0)
@@ -11601,16 +11413,6 @@
 			(justify right bottom)
 		)
 		(uuid "c78ce67e-3730-4ed8-aa17-62bda30405ac")
-	)
-	(label "5V"
-		(at 163.83 252.73 0)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "c9c971b6-bc37-4543-8d0a-4622266199fd")
 	)
 	(label "34_T19"
 		(at 246.38 86.36 0)
@@ -12687,79 +12489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:MOUNT-PAD-ROUND5.0")
-		(at 163.83 247.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1d55a309-302e-4c00-8e1f-23af5ccb1ce3")
-		(property "Reference" "H5"
-			(at 163.2458 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "MOUNT-PAD-ROUND5.0"
-			(at 166.2938 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 163.83 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 163.83 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B5"
-			(uuid "95e935e1-2951-4a91-a245-5a8204b33673")
-		)
-		(instances
-			(project ""
-				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-			(project "ZED_BREAKOUT_v22"
-				(path "/ba44d347-e9af-4fd2-8421-367ae7c30fc3/0c5faecc-45a7-4cf4-abb8-791677a8c5c5"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
 		(at 307.34 76.2 0)
 		(unit 1)
@@ -13378,79 +13107,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:MOUNT-PAD-ROUND5.0")
-		(at 184.15 247.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e4dbf29-5b03-44b8-98d5-de80b6ba8183")
-		(property "Reference" "H7"
-			(at 183.5658 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "MOUNT-PAD-ROUND5.0"
-			(at 186.6138 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 184.15 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B5"
-			(uuid "1f05a0b6-379f-4c0d-9796-e112472dff49")
-		)
-		(instances
-			(project ""
-				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-			(project "ZED_BREAKOUT_v22"
-				(path "/ba44d347-e9af-4fd2-8421-367ae7c30fc3/0c5faecc-45a7-4cf4-abb8-791677a8c5c5"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ZED_BREAKOUT_v22-eagle-import:GND")
 		(at 53.34 193.04 0)
 		(unit 1)
@@ -14019,79 +13675,6 @@
 			(project "ZED_BREAKOUT_v22"
 				(path "/ba44d347-e9af-4fd2-8421-367ae7c30fc3/0c5faecc-45a7-4cf4-abb8-791677a8c5c5"
 					(reference "#SUPPLY08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:MOUNT-PAD-ROUND5.0")
-		(at 173.99 247.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8ff5a635-d54b-408d-8264-d4c246ab4948")
-		(property "Reference" "H6"
-			(at 173.4058 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "MOUNT-PAD-ROUND5.0"
-			(at 176.4538 244.856 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 173.99 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 247.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "B5"
-			(uuid "ec235dde-e0cf-45d2-8ea5-8de365d8e442")
-		)
-		(instances
-			(project ""
-				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "H6")
-					(unit 1)
-				)
-			)
-			(project "ZED_BREAKOUT_v22"
-				(path "/ba44d347-e9af-4fd2-8421-367ae7c30fc3/0c5faecc-45a7-4cf4-abb8-791677a8c5c5"
-					(reference "H2")
 					(unit 1)
 				)
 			)
