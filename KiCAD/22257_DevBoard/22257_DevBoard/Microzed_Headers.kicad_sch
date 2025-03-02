@@ -11744,28 +11744,6 @@
 		)
 		(uuid "fefc2e1c-2cd2-40b6-94ae-e2b92ca00d9f")
 	)
-	(global_label "BRD_10MHz_OUT"
-		(shape output)
-		(at 312.42 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0f5153d1-7c9a-4802-b798-7ca1459e7f79")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 331.008 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "BRD_PPS_IN"
 		(shape input)
 		(at 312.42 88.9 0)
@@ -11960,6 +11938,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BRD_10MHz_OUT"
+		(shape output)
+		(at 114.3 187.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72c5e0bb-eb67-46c8-a677-ef4aa060d9e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.712 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -12175,28 +12175,6 @@
 		(uuid "c6cc7a97-32e6-4997-aa2a-616e32d0a5be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 199.5933 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BRD_PPS_IN"
-		(shape input)
-		(at 184.15 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d5136d31-3fa7-4749-bb75-678ea686cd63")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.5652 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
