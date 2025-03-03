@@ -190,7 +190,7 @@
         0.2032,
         0.254,
         0.381,
-        7.62
+        0.762
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -493,12 +493,23 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "name": "+5V",
+        "pcb_color": "rgb(255, 233, 0)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
       }
     ],
     "meta": {
       "version": 4
     },
-    "net_colors": null,
+    "net_colors": {
+      "+12V": "rgb(204, 102, 0)",
+      "+3.3V": "rgb(194, 0, 0)",
+      "+5V": "rgb(194, 0, 194)",
+      "GND": "rgb(128, 77, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },

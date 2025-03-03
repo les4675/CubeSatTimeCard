@@ -5,190 +5,6 @@
 	(uuid "0c936ff3-cd32-4c84-89c1-ad50573fe3e9")
 	(paper "A3")
 	(lib_symbols
-		(symbol "ZED_BREAKOUT_v22-eagle-import:+3.3V"
-			(power)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#SUPPLY"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" ""
-				(at -0.127 3.048 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "SUPPLY SYMBOL  3.3 Volt (3V3) Bar"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_1_0"
-				(polyline
-					(pts
-						(xy 1.905 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 90)
-					(length 2.54)
-					(name "+3.3V"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "ZED_BREAKOUT_v22-eagle-import:+5V"
-			(power)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#SUPPLY"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" ""
-				(at -0.127 3.048 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "SUPPLY SYMBOL  5 Volt (5V0) Bar"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_1_0"
-				(polyline
-					(pts
-						(xy 1.905 2.54) (xy -1.905 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 90)
-					(length 2.54)
-					(name "+5V"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "ZED_BREAKOUT_v22-eagle-import:61083-102402LF-JX1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6393,6 +6209,256 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "MicroZed Headers"
 		(exclude_from_sim no)
@@ -12521,7 +12587,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 307.34 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12529,8 +12595,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e71f011-f587-424b-9878-bb9c3587fb3f")
-		(property "Reference" "#SUPPLY0103"
-			(at 307.34 76.2 0)
+		(property "Reference" "#PWR103"
+			(at 307.34 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12538,13 +12604,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 307.213 73.152 0)
+		(property "Value" "+5V"
+			(at 307.34 72.644 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -12565,7 +12630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 307.34 76.2 0)
 			(effects
 				(font
@@ -12580,7 +12645,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY0103")
+					(reference "#PWR103")
 					(unit 1)
 				)
 			)
@@ -12593,7 +12658,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 374.65 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12601,8 +12666,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e71f011-f587-424b-9878-bb9c3587fb40")
-		(property "Reference" "#SUPPLY01"
-			(at 374.65 78.74 0)
+		(property "Reference" "#PWR1"
+			(at 374.65 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12610,13 +12675,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 374.523 75.692 0)
+		(property "Value" "+5V"
+			(at 374.65 75.184 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -12637,7 +12701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 374.65 78.74 0)
 			(effects
 				(font
@@ -12652,7 +12716,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY01")
+					(reference "#PWR1")
 					(unit 1)
 				)
 			)
@@ -12797,7 +12861,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 66.04 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12805,8 +12869,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4abd9c60-6314-4ae3-991f-41dd603e6dc4")
-		(property "Reference" "#SUPPLY013"
-			(at 66.04 176.53 0)
+		(property "Reference" "#PWR13"
+			(at 66.04 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12814,13 +12878,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 65.913 173.482 0)
+		(property "Value" "+5V"
+			(at 66.04 172.974 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -12841,7 +12904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 66.04 176.53 0)
 			(effects
 				(font
@@ -12856,14 +12919,14 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY013")
+					(reference "#PWR13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 242.57 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12871,8 +12934,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "51a2b236-7f97-4b56-b7ec-968473c4d733")
-		(property "Reference" "#SUPPLY08"
-			(at 242.57 146.05 0)
+		(property "Reference" "#PWR8"
+			(at 242.57 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12880,13 +12943,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 242.443 143.002 0)
+		(property "Value" "+5V"
+			(at 242.57 142.494 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -12907,7 +12969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 242.57 146.05 0)
 			(effects
 				(font
@@ -12922,14 +12984,14 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY08")
+					(reference "#PWR8")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 334.01 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12973,7 +13035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 334.01 171.45 0)
 			(effects
 				(font
@@ -13001,7 +13063,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 107.95 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13045,7 +13107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 107.95 171.45 0)
 			(effects
 				(font
@@ -13067,7 +13129,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 118.11 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13075,8 +13137,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5cfa1549-b4b6-4636-9eb4-e54314854fb0")
-		(property "Reference" "#SUPPLY0108"
-			(at 118.11 76.2 0)
+		(property "Reference" "#PWR108"
+			(at 118.11 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13084,13 +13146,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "3V3"
-			(at 117.983 73.152 0)
+		(property "Value" "+3.3V"
+			(at 118.11 72.644 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -13111,7 +13172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 118.11 76.2 0)
 			(effects
 				(font
@@ -13126,7 +13187,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY0108")
+					(reference "#PWR108")
 					(unit 1)
 				)
 			)
@@ -13575,7 +13636,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 200.66 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13619,7 +13680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 200.66 171.45 0)
 			(effects
 				(font
@@ -13641,7 +13702,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 238.76 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13685,7 +13746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 238.76 171.45 0)
 			(effects
 				(font
@@ -13713,7 +13774,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 363.22 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13721,8 +13782,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a51c9e78-dc5c-45af-8244-95fd92460a2d")
-		(property "Reference" "#SUPPLY02"
-			(at 363.22 172.72 0)
+		(property "Reference" "#PWR2"
+			(at 363.22 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13730,13 +13791,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 363.093 169.672 0)
+		(property "Value" "+5V"
+			(at 363.22 169.164 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -13757,7 +13817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 363.22 172.72 0)
 			(effects
 				(font
@@ -13772,7 +13832,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY02")
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
@@ -14338,7 +14398,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 179.07 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14382,7 +14442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 179.07 85.09 0)
 			(effects
 				(font
@@ -14404,7 +14464,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 207.01 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14412,8 +14472,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6016a28-74f3-4a59-9667-df1b0358f34b")
-		(property "Reference" "#SUPPLY0106"
-			(at 207.01 147.32 0)
+		(property "Reference" "#PWR106"
+			(at 207.01 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14421,13 +14481,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 206.883 144.272 0)
+		(property "Value" "+5V"
+			(at 207.01 143.764 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -14448,7 +14507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 207.01 147.32 0)
 			(effects
 				(font
@@ -14463,7 +14522,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY0106")
+					(reference "#PWR106")
 					(unit 1)
 				)
 			)
@@ -14476,7 +14535,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 107.95 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14484,8 +14543,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e214a0da-a115-4189-89f3-7108b9398f9e")
-		(property "Reference" "#SUPPLY07"
-			(at 107.95 146.05 0)
+		(property "Reference" "#PWR7"
+			(at 107.95 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14493,13 +14552,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 107.823 143.002 0)
+		(property "Value" "+5V"
+			(at 107.95 142.494 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -14520,7 +14578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 107.95 146.05 0)
 			(effects
 				(font
@@ -14535,14 +14593,14 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY07")
+					(reference "#PWR7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 334.01 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14550,8 +14608,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4c83f0f-811d-4a3d-83e0-110c2d543501")
-		(property "Reference" "#SUPPLY03"
-			(at 334.01 146.05 0)
+		(property "Reference" "#PWR3"
+			(at 334.01 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14559,13 +14617,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 333.883 143.002 0)
+		(property "Value" "+5V"
+			(at 334.01 142.494 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -14586,7 +14643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 334.01 146.05 0)
 			(effects
 				(font
@@ -14601,7 +14658,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY03")
+					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -14869,7 +14926,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 66.04 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14877,8 +14934,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efa197ca-3b8d-4ab7-9ca9-5286315ff610")
-		(property "Reference" "#SUPPLY06"
-			(at 66.04 85.09 0)
+		(property "Reference" "#PWR6"
+			(at 66.04 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14886,13 +14943,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 65.913 82.042 0)
+		(property "Value" "+5V"
+			(at 66.04 81.534 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -14913,7 +14969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 66.04 85.09 0)
 			(effects
 				(font
@@ -14928,23 +14984,24 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY06")
+					(reference "#PWR6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+5V")
+		(lib_id "power:+5V")
 		(at 107.95 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "efa197ca-3b8d-4ab7-9ca9-5286315ff611")
-		(property "Reference" "#SUPPLY0109"
-			(at 107.95 76.2 0)
+		(property "Reference" "#PWR109"
+			(at 107.95 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14952,13 +15009,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V"
-			(at 107.823 73.152 0)
+		(property "Value" "+5V"
+			(at 107.95 71.12 0)
 			(effects
 				(font
-					(size 1.778 1.5113)
+					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -14979,7 +15035,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 107.95 76.2 0)
 			(effects
 				(font
@@ -14994,7 +15050,7 @@
 		(instances
 			(project "22257_DevBoard"
 				(path "/271303ce-366a-4ce1-87f0-a9575f73ea97/e9726c4f-00dc-44d3-8ccd-104faf82f440"
-					(reference "#SUPPLY0109")
+					(reference "#PWR109")
 					(unit 1)
 				)
 			)
@@ -15007,7 +15063,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ZED_BREAKOUT_v22-eagle-import:+3.3V")
+		(lib_id "power:+3.3V")
 		(at 116.84 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15051,7 +15107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 116.84 196.85 0)
 			(effects
 				(font
