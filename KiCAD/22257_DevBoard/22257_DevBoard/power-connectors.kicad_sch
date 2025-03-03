@@ -1087,7 +1087,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Shunt_US"
+		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1098,15 +1098,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at -5.08 0 90)
+				(at 2.032 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Shunt_US"
-				(at -3.048 0 90)
+			(property "Value" "R"
+				(at 0 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1131,7 +1131,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Shunt resistor, US symbol"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1140,7 +1140,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R res shunt resistor"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1149,7 +1149,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_*Shunt*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1158,95 +1158,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Shunt_US_1_1"
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 0 2.54)
-					)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "R_1_1"
 				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "1"
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1262,27 +1191,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 2.54 180)
-					(length 2.54)
-					(name "2"
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1290,24 +1201,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 -2.54 180)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2851,6 +2744,12 @@
 		(uuid "1912ec1e-468f-4e28-aa7c-e2c5b9754b20")
 	)
 	(junction
+		(at 152.4 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "219fa9f3-f9b4-47a0-8b40-e89f78b04a96")
+	)
+	(junction
 		(at 231.14 243.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2977,6 +2876,12 @@
 		(uuid "a74e24e9-d16d-4966-8a04-bf7bfc67b161")
 	)
 	(junction
+		(at 149.86 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa5158f3-5be0-4478-85c0-0795b107e516")
+	)
+	(junction
 		(at 156.21 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3007,6 +2912,12 @@
 		(uuid "c4381caa-dbd9-4d5b-a819-7befeb9d615b")
 	)
 	(junction
+		(at 139.7 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8620bd8-6caa-4cf4-91b9-9944083b565a")
+	)
+	(junction
 		(at 45.72 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3017,6 +2928,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d48c9ec0-9abd-496a-8c14-5e5ccec3c7e9")
+	)
+	(junction
+		(at 162.56 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e073fe9a-df75-49cd-86c0-3e671c69bbd2")
 	)
 	(junction
 		(at 77.47 237.49)
@@ -3150,6 +3067,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 119.38) (xy 140.97 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07686b36-be14-437d-b8c5-3c0efc25fd4f")
+	)
+	(wire
+		(pts
 			(xy 107.95 48.26) (xy 105.41 48.26)
 		)
 		(stroke
@@ -3167,6 +3094,16 @@
 			(type default)
 		)
 		(uuid "07a89aac-db52-4568-9043-f002cb1dd233")
+	)
+	(wire
+		(pts
+			(xy 149.86 123.19) (xy 149.86 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0802ba1b-b963-4db1-937a-ec6ee243bd71")
 	)
 	(wire
 		(pts
@@ -3337,6 +3274,16 @@
 			(type default)
 		)
 		(uuid "2104b612-9e5c-47e5-ad34-704a3c0bd411")
+	)
+	(wire
+		(pts
+			(xy 152.4 44.45) (xy 153.67 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "216fc3ca-a411-425a-86a3-99f9c76ce106")
 	)
 	(wire
 		(pts
@@ -3520,6 +3467,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 48.26) (xy 152.4 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cf2e3e4-f22b-4789-9e98-e5b396dfc720")
+	)
+	(wire
+		(pts
 			(xy 166.37 34.29) (xy 166.37 29.21)
 		)
 		(stroke
@@ -3527,6 +3484,16 @@
 			(type default)
 		)
 		(uuid "3d4b0d28-fa1f-43f9-a362-78dc9a4cdd03")
+	)
+	(wire
+		(pts
+			(xy 142.24 123.19) (xy 139.7 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d82fc59-a902-4262-9f3c-1d37f561557f")
 	)
 	(wire
 		(pts
@@ -3740,7 +3707,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 48.26) (xy 160.02 57.15)
+			(xy 160.02 46.99) (xy 160.02 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4050,6 +4017,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 48.26) (xy 152.4 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83f067a4-37e3-4229-a0c7-5a7fd4453763")
+	)
+	(wire
+		(pts
 			(xy 95.25 52.07) (xy 97.79 52.07)
 		)
 		(stroke
@@ -4117,6 +4094,16 @@
 			(type default)
 		)
 		(uuid "8a3e3f3a-007d-406e-a36d-b709ccfc8e8f")
+	)
+	(wire
+		(pts
+			(xy 148.59 119.38) (xy 149.86 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab7e86c-c48c-4129-835c-854c0f49ae77")
 	)
 	(wire
 		(pts
@@ -4590,6 +4577,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 123.19) (xy 139.7 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c281ab5b-d9c1-4047-b2d9-75898c7b46a6")
+	)
+	(wire
+		(pts
+			(xy 147.32 123.19) (xy 149.86 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c320303e-188e-4abe-9494-831a84cf20c2")
+	)
+	(wire
+		(pts
 			(xy 237.49 36.83) (xy 237.49 44.45)
 		)
 		(stroke
@@ -4650,6 +4657,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 46.99) (xy 162.56 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9f2ec2e-9f14-40c1-ad55-3bdb585eccc4")
+	)
+	(wire
+		(pts
 			(xy 115.57 121.92) (xy 119.38 121.92)
 		)
 		(stroke
@@ -4687,6 +4704,16 @@
 			(type default)
 		)
 		(uuid "cdde5c95-b42e-4cbf-9ece-582d41847b4e")
+	)
+	(wire
+		(pts
+			(xy 161.29 44.45) (xy 162.56 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf3bbb23-18c4-4343-9870-c28ce6d3e0b8")
 	)
 	(wire
 		(pts
@@ -4877,6 +4904,16 @@
 			(type default)
 		)
 		(uuid "e1479f78-890c-433a-90a9-2a4fb7b4e8c9")
+	)
+	(wire
+		(pts
+			(xy 160.02 46.99) (xy 162.56 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5e5a2d8-a555-4ec1-b798-3d5b712cac21")
 	)
 	(wire
 		(pts
@@ -5343,7 +5380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Shunt_US")
+		(lib_id "Device:R")
 		(at 144.78 119.38 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5386,7 +5423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Shunt resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 144.78 119.38 0)
 			(effects
 				(font
@@ -5397,12 +5434,6 @@
 		)
 		(pin "1"
 			(uuid "6762446c-ff81-46ae-beb8-4a77bd577a9f")
-		)
-		(pin "3"
-			(uuid "57225776-6578-423b-9376-f02b9c2c3cd6")
-		)
-		(pin "4"
-			(uuid "0fdec5bd-5b02-40b7-92aa-9eff11f65466")
 		)
 		(pin "2"
 			(uuid "e44ad297-fbc4-43f4-bec3-61935a21d606")
@@ -7036,7 +7067,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Shunt_US")
+		(lib_id "Device:R")
 		(at 157.48 44.45 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7079,7 +7110,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Shunt resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 157.48 44.45 0)
 			(effects
 				(font
@@ -7090,12 +7121,6 @@
 		)
 		(pin "1"
 			(uuid "eac49d1f-a219-4f93-8f6d-24fb57492264")
-		)
-		(pin "3"
-			(uuid "3cc68e24-60a3-4967-a964-32a4d94fa465")
-		)
-		(pin "4"
-			(uuid "0db946d2-18c4-4c27-839b-51d004e8d8bc")
 		)
 		(pin "2"
 			(uuid "2639b582-19ba-478e-a330-1e28b57b4f3b")
