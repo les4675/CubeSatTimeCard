@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ZED_BREAKOUT v32")(type "KiCad")(uri "$(KIPRJMOD)/ZED_BREAKOUT v32.pretty")(options "")(descr ""))
+)

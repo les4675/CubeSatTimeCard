@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "ZED_BREAKOUT_v22-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/ZED_BREAKOUT_v22-eagle-import.kicad_sym")(options "")(descr ""))
+)
