@@ -2631,6 +2631,16 @@
 		)
 		(uuid "4b73b2a4-5dd4-48d7-b1a7-df7882e4e0b1")
 	)
+	(text "Current Resolution = 5mA"
+		(exclude_from_sim no)
+		(at 167.386 66.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4c2c7fca-4d50-4d71-8b57-336895d80628")
+	)
 	(text "Power Monitor"
 		(exclude_from_sim no)
 		(at 188.976 140.97 0)
@@ -5457,7 +5467,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Shunt_US"
+		(property "Value" "2m"
 			(at 144.78 115.57 90)
 			(effects
 				(font
@@ -7346,7 +7356,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Shunt_US"
+		(property "Value" "2m"
 			(at 157.48 40.64 90)
 			(effects
 				(font
