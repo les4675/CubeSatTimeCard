@@ -6480,7 +6480,7 @@
 	)
 	(text "50 OHM RESISTORS FOR\nDRIVING SIDE OF SPI LINES"
 		(exclude_from_sim no)
-		(at 315.214 128.524 0)
+		(at 311.912 132.08 0)
 		(effects
 			(font
 				(size 5.08 5.08)
