@@ -8239,7 +8239,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" ".1u"
+		(property "Value" "0.1u"
 			(at 55.88 55.8799 0)
 			(effects
 				(font

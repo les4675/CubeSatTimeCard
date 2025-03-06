@@ -60,6 +60,22 @@
       ],
       "drc_exclusions": [
         [
+          "lib_footprint_issues|62662588|79448216|80c6d577-991d-4aec-8498-4a482213ceee|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|62666828|5359301|3a2ed922-9032-458d-8130-77097cea4246|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|62673448|21588141|c1845a45-7818-460f-a7ff-c706fa3a5ecc|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|62673448|66038141|ab47beb4-d1da-4ba2-94ac-052f2a5eeea0|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|207365600|25450800|9f67bf09-3b8b-48ab-9a68-220296bd47c8|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -73,14 +89,6 @@
         ],
         [
           "lib_footprint_mismatch|207365600|71170800|a2c36dc9-6e06-47d8-b6db-f007fb55f7c2|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|62673448|21588141|c1845a45-7818-460f-a7ff-c706fa3a5ecc|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|62673448|66038141|ab47beb4-d1da-4ba2-94ac-052f2a5eeea0|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -543,7 +551,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Outputs/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -554,7 +562,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "22257_DevBoard_BOM.csv",
+    "bom_export_filename": "22257_DevBoard_BOM_02.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

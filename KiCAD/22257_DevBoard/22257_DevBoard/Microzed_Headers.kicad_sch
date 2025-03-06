@@ -6725,17 +6725,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "EXTERNAL 10K PULLUPS FOR I2C LINES"
-		(exclude_from_sim no)
-		(at 199.898 64.77 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(color 255 22 0 1)
-			)
-		)
-		(uuid "3737f1c6-e8f4-419e-a6c0-778f897140d1")
-	)
 	(text "MicroZed Headers"
 		(exclude_from_sim no)
 		(at 304.038 265.43 0)
