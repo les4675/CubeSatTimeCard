@@ -6,12 +6,12 @@
 volatile unsigned long timerOvCount = 0;
 volatile unsigned long pps1_timestamp = 0; // GNSS PPS timestamp from P2.1 interrupt
 volatile unsigned long pps2_timestamp = 0; // CSAC PPS timestamp from P2.0 interrupt
-volatile unsigned char pps1_captured = 0;
-volatile unsigned char pps2_captured = 0;
+volatile unsigned char gnss_captured = 0;
+volatile unsigned char csac_captured = 0;
 volatile unsigned long diff = 0;
 
-volatile unsigned int gnss_capVal = 0, gnss_ovVal = 0, gnss_capVal_report = 0, gnss_ovVal_report = 0;
-volatile unsigned int csac_capVal = 0, csac_ovVal = 0, csac_capVal_report = 0, csac_ovVal_report = 0;
+volatile unsigned long gnss_capVal = 0, gnss_ovVal = 0, gnss_capVal_report = 0, gnss_ovVal_report = 0;
+volatile unsigned long csac_capVal = 0, csac_ovVal = 0, csac_capVal_report = 0, csac_ovVal_report = 0;
 volatile char reportValues = 0;
 
 // UART function prototypes
@@ -32,12 +32,14 @@ int main(void) {
 
     uart_init();
 
+    timer_init();
 
     __enable_interrupt();   // Enable global interrupts
 
     while (1) {
         if (reportValues)
         {
+            reportValues = 0;
             /*
             // Compute the absolute phase difference in timer counts.
             if (pps1_timestamp > pps2_timestamp)
@@ -45,32 +47,46 @@ int main(void) {
             else
                 diff = pps2_timestamp - pps1_timestamp;
             */
-            gnss_capVal_report = gnss_capVal;
-            gnss_ovVal_report = gnss_ovVal;
-            csac_capVal_report = csac_capVal;
-            csac_ovVal_report = csac_ovVal;
+            if (gnss_captured && csac_captured)
+            {
+                gnss_captured = 0;
+                csac_captured = 0;
+                gnss_capVal_report = gnss_capVal;
+                gnss_ovVal_report = gnss_ovVal;
+                csac_capVal_report = csac_capVal;
+                csac_ovVal_report = csac_ovVal;
 
 
-            uart_send_string("GNSS,");
-            utoa(gnss_capVal, buf);
-            uart_send_string(buf);
-            uart_send_string(",");
-            utoa(gnss_ovVal, buf);
-            uart_send_string(buf);
-            uart_send_string("CSAC,");
-            utoa(csac_capVal, buf);
-            uart_send_string(buf);
-            uart_send_string(",");
-            utoa(csac_ovVal, buf);
-            uart_send_string(buf);
-            uart_send_string("\r\n");
+                uart_send_string("GNSS,");
+                utoa(gnss_capVal_report, buf);
+                uart_send_string(buf);
+                uart_send_string(",");
+                utoa(gnss_ovVal_report, buf);
+                uart_send_string(buf);
+                uart_send_string(",CSAC,");
+                utoa(csac_capVal_report, buf);
+                uart_send_string(buf);
+                uart_send_string(",");
+                utoa(csac_ovVal_report, buf);
+                uart_send_string(buf);
+                uart_send_string("\r\n");
 
-            reportValues = 0;
+                // Reset flags for the next measurement.
+            }
+            else
+            {
+                if (!csac_captured)
+                {
+                    uart_send_string("%CSAC NOT CAPTURED\r\n");
+                }
+                if (!gnss_captured)
+                {
+                    uart_send_string("%GNSS NOT CAPTURED\r\n");
+                }
+            }
 
-            // Reset flags for the next measurement.
-            pps1_captured = 0;
-            pps2_captured = 0;
         }
+        _nop();
     }
 }
 
@@ -86,6 +102,9 @@ void CLK_init(void)
     BCSCTL3 |= LFXT1S_3;
     BCSCTL3 &= ~XCAP_3;
 
+    //Set ACLK to be 10MHz/8 = 1.25MHz
+    BCSCTL1 |= DIVA_3;
+
     //Set P2.6 (Pin 19) to be an input for XIN
     P2SEL |= BIT6 | BIT7;
     P2SEL2 |= BIT6 | BIT7;
@@ -98,11 +117,13 @@ void uart_init(void) {
     P1SEL2 |= BIT1 | BIT2;
 
     UCA0CTL1 |= UCSWRST;       // Put state machine in reset
-    UCA0CTL1 |= UCSSEL_2;      // Use SMCLK
+    UCA0CTL1 |= UCSSEL_1;      // Use ACLK
 
     // Baud rate configuration for 9600 baud (10MHz/9600 = 1041.67, 1041.67/16 = 65 + 2/16)
-    UCA0BR0 = 65;
-    UCA0MCTL = UCBRF_2 | UCBRS0 | UCOS16;
+    UCA0BR0 = 208;
+    UCA0MCTL = UCBRS_3;
+
+    UCA0STAT |= UCLISTEN;
 
     UCA0CTL1 &= ~UCSWRST;      // Release state machine
 }
@@ -111,12 +132,14 @@ void timer_init(void)
 {
     // Set up Timer_A as a free-running counter in continuous mode using SMCLK,
     // and enable its overflow interrupt to extend the 16-bit counter.
-    TA1CTL = TASSEL_2 | MC_2 | TAIE;
-    TA1CCTL1 = CM1 | SCS | CAP | CCIE;  //Capture mode on rising edge of CCI1A (P2.1), enable interrupt
-    TA1CCTL2 = CM1 | SCS | CAP | CCIE;  //Capture mode on rising edge of CCI2A (P2.4), enable interrupt
+    TA1CTL = TASSEL_2 | TAIE;
+    TA1CCTL0 = CM0 | SCS | CAP | CCIE;  //Capture mode on rising edge of CCI1A (P2.1), enable interrupt
+    TA1CCTL2 = CM0 | SCS | CAP | CCIE;  //Capture mode on rising edge of CCI2A (P2.4), enable interrupt
 
-    P2SEL |= BIT1 | BIT4; //Configure P2.1 and P2.4 as CCIxA pins for timer A1
+    P2SEL |= BIT0 | BIT4; //Configure P2.1 and P2.4 as CCIxA pins for timer A1
 
+    TA1CTL |= MC_2;
+    /*
     // Configure CSAC PPS on P2.0 (external interrupt)
     P2DIR &= ~BIT0;      // Input
     P2IE  |= BIT0;       // Enable interrupt on P2.0
@@ -128,6 +151,7 @@ void timer_init(void)
     P2IE  |= BIT1;       // Enable interrupt on P2.1
     P2IES &= ~BIT1;      // Trigger on rising edge
     P2IFG &= ~BIT1;      // Clear flag
+    */
 }
 
 // Transmit a single character over UART
@@ -161,25 +185,44 @@ void utoa(unsigned long value, char *str) {
         str[j] = buf[i - 1 - j];
     str[i] = '\0';
 }
+//Interrupt handler for capture0
+#pragma vector = TIMER1_A0_VECTOR
+__interrupt void Timer_A0_ISR(void)
+{
+    _nop();
+    gnss_captured = 1;
+    gnss_capVal = TA1CCR0;
+    gnss_ovVal = timerOvCount;
+    TA1CCR0 = 0;
+    TA1CCTL0 &= ~COV;
+}
 
-//Interrupt handler for captures and overflow
-#pragma vector = 0xFFF8
+//Interrupt handler for capture2 and overflow
+#pragma vector = TIMER1_A1_VECTOR
 __interrupt void Timer_A1_ISR(void)
 {
     switch (TA1IV)
     {
-        case(2):
-            gnss_capVal = TACCR1;
+        /*case(2):
+            _nop();
+            gnss_capVal = TA1CCR1;
             gnss_ovVal = timerOvCount;
-            break;
+            TA1CCTL1 &= ~COV;
+            TA1CCTL1 &= ~CCIE;
+            break;*/
         case(4):
-            csac_capVal = TACCR2;
+            _nop();
+            csac_captured = 1;
+            csac_capVal = TA1CCR2;
             csac_ovVal = timerOvCount;
+            TA1CCTL2 &= ~COV;
+
             break;
         case(0xA):
+            _nop();
             timerOvCount++;
-            //Resets overflow counter and reports values after 0.996s
-            if (timerOvCount >= 152)
+            //Resets overflow counter and reports values after 0.99942s
+            if (timerOvCount >= 244)
             {
                 timerOvCount = 0;
                 reportValues = 1;
