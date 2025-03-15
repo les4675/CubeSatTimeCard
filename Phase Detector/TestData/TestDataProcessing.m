@@ -16,7 +16,7 @@ phaseCurve = polyval(fit,longTermSection(:,1));
 fitTemp = polyfit(longTermSection(:,1),longTermSection(:,3),15);
 tempCurve = polyval(fitTemp,longTermSection(:,1));
 
-phaseAvg = movmean(longTermSection(:,2),2000);
+phaseAvg = movmean(longTermSection(:,2),3000);
 tempAvg = movmean(longTermSection(:,3),500);
 
 
@@ -31,7 +31,7 @@ plot(longTermSection(:,1), phaseAvg);
 xlabel("Time (seconds)");
 ylabel("Phase Error (ns)");
 title("Long-Term Test Phase Error Data");
-legend(["Original" "Moving Average" "Poly Fit" "Smooth Tool"]);
+legend(["Original" "Poly Fit" "Moving Average"]);
 nexttile;
 plot(longTermSection(:,1), longTermSection(:,3));
 hold on;
@@ -42,15 +42,15 @@ ylabel("Temperature (deg C)");
 title("Long-Term Test Temperature Data");
 legend(["Original" "Moving Average" "Poly Fit"]);
 
-
+%%
 
 figure();
-diffs = [diff(longTermSection(:,1)) diff(phaseCurve)];
+diffs = [diff(longTermSection(:,1)) diff(phaseAvg)];
 derivative = (diffs(:,2) ./ diffs(:,1)) * 10^-9; %ADJUSTED FOR UNITS OF ns/ns!!
 plot(longTermSection(2:end,1), derivative);
 
-pad = 1000;
-compiledData = [longTermSection(pad+1:end-pad,1), phaseCurve(pad+1:end-pad), derivative(pad:end-pad), tempCurve(pad+1:end-pad)];
+pad = 3000;
+compiledData = [longTermSection(pad+1:end-pad,1), phaseAvg(pad+1:end-pad), movmean(derivative(pad:end-pad),50), tempAvg(pad+1:end-pad)];
 figure();
 tiledlayout(3,1);
 nexttile;
@@ -68,3 +68,7 @@ plot(compiledData(:,1),compiledData(:,4));
 xlabel("Time (seconds)");
 ylabel("Temperature (deg C)");
 title("Processed Long-Term Test Temperature Data");
+%% 
+[AVAR, tau] = allanvar(Residuals(:,2),"decade",0.1);
+figure();
+loglog(tau, sqrt(AVAR));
