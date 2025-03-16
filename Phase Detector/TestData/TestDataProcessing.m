@@ -1,12 +1,12 @@
-data = [testData.time, testData.phase, testData.temp];
+data = [finalData(:,1), [finalData(1:63700,3);finalData(63701:end,4)], finalData(:,2)];
+% save("UnprocessedData_03-10-2025","data");
 %% 
-phaseRange = 100000; %in nanoseconds
-outliersRemoved = [];
-for i = 1:1:size(data,1)
-    if abs(data(i,2)) < phaseRange
-        outliersRemoved = [outliersRemoved; data(i,:)];
-    end
-end
+
+% Remove Outliers
+phaseRange = 24000; %in nanoseconds
+outliers = abs(data(:,2)) > phaseRange;
+data(outliers,:) = [];
+
 %%
 close all;
 longTermSection = outliersRemoved(69000:10:end,:);
